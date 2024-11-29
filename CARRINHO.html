@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seu Carrinho - Peça Express</title>
+  <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="IMAGENS/1.png" alt="Logo Peça Express">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="https://vasco.com.br" target="_blank">Catálogo</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="icones">
+      <a href="#"><img src="IMAGENS/user.png" alt="Usuário"></a>
+      <a href="https://vasco.com.br" target="_blank"><img src="IMAGENS/carrinho.png" alt="Carrinho"></a>
+    </div>
+  </header>
+
+  <main class="pagina-carrinho">
+    <h1>Seu carrinho</h1>
+    <a href="#" class="link-voltar">Voltar às compras</a>
+    <table class="tabela-carrinho">
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Preço</th>
+          <th>Quantidade</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="informacoes-produto">
+            <img src="IMAGENS/suspensao.jpeg" alt="Suspensão">
+            <div>
+              <p>Suspensão</p>
+              <a href="#" class="link-remover">Remover</a>
+            </div>
+          </td>
+          <td>R$ 1.299,99</td>
+          <td>
+            <div class="controles-quantidade">
+              <button>-</button>
+              <input type="text" value="1">
+              <button>+</button>
+            </div>
+          </td>
+          <td>R$ 1.299,99</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="resumo-carrinho">
+      <p>Sub-total <span>R$ 1.299,99</span></p>
+      <p class="nota">Impostos e custos de envio serão calculados em breve</p>
+      <a href="https://vasco.com.br" target="_blank">
+        <button class="botao-confirmar">Confirmar</button>
+      </a>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="container-rodape">
+      <div class="logo-rodape">
+        <img src="IMAGENS/2.png" alt="Logo Peça Express">
+        <p>A peça automotiva ideal, feita para o desempenho do seu veículo e para o seu conforto nas estradas.</p>
+      </div>
+      <div class="links-rodape">
+        <div class="coluna-rodape">
+          <h3>Catálogo</h3>
+          <ul>
+            <li><a href="#" target="_blank">Ofertas</a></li>
+            <li><a href="#" target="_blank">Mais Pesquisados</a></li>
+            <li><a href="#" target="_blank">Mais Vendidos</a></li>
+          </ul>
+        </div>
+        <div class="coluna-rodape">
+          <h3>Sobre</h3>
+          <ul>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">Envio</a></li>
+            <li><a href="#">Devoluções</a></li>
+          </ul>
+        </div>
+        <div class="coluna-rodape">
+          <h3>Informações</h3>
+          <ul>
+            <li><a href="#">Contacte-nos</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos e Condições</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

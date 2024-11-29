@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento - Peça Express</title>
+  <link rel="stylesheet" href="PAGAMENTO.CSS">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="logo">
+      <img src="IMAGENS/1.png" alt="Logo Peça Express">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Carrinho</a></li>
+        <li><a href="#">Detalhes</a></li>
+        <li><a href="#" class="ativo">Envio</a></li>
+        <li><a href="#">Pagamento</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pagina-pagamento">
+    <div class="secao-formulario">
+      <div class="informacoes-contato">
+        <h2>Resumo do Envio</h2>
+        <div class="bloco-info">
+          <p>Contato: <span>vascodagama@gmail.com</span> <a href="#">Editar</a></p>
+        </div>
+        <div class="bloco-info">
+          <p>Endereço: <span>Av. Pres. Epitácio Pessoa, 600 - Torre</span> <a href="#">Editar</a></p>
+        </div>
+        <div class="bloco-info">
+          <p>Método: <span>Envio Padrão - GRÁTIS</span> <a href="#">Editar</a></p>
+        </div>
+      </div>
+
+      <div class="metodo-pagamento">
+        <h2>Método de Pagamento</h2>
+        <div class="pagamento-cartao">
+          <h3>Cartão de crédito</h3>
+          <form>
+            <div class="campo-formulario">
+              <label for="numero-cartao">Número do cartão</label>
+              <input type="text" id="numero-cartao" placeholder="Número do cartão">
+            </div>
+            <div class="campo-formulario">
+              <label for="nome-titular">Nome do Titular</label>
+              <input type="text" id="nome-titular" placeholder="Nome do Titular">
+            </div>
+            <div class="campo-formulario campos-inline">
+              <div>
+                <label for="data-expiracao">Expiração (MM/AA)</label>
+                <input type="text" id="data-expiracao" placeholder="MM/AA">
+              </div>
+              <div>
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="CVV">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="endereco-cobranca">
+        <h2>Endereço de Cobrança</h2>
+        <form>
+          <div class="campo-formulario checkbox">
+            <input type="radio" id="endereco-igual" name="endereco-cobranca" checked>
+            <label for="endereco-igual">Igual ao endereço de entrega</label>
+          </div>
+          <div class="campo-formulario checkbox">
+            <input type="radio" id="endereco-diferente" name="endereco-cobranca">
+            <label for="endereco-diferente">Use um endereço diferente para cobrança</label>
+          </div>
+        </form>
+      </div>
+
+      <div class="botoes-formulario">
+        <a href="https://vasco.com.br" class="botao-voltar">Voltar ao envio</a>
+        <button class="botao-pagar">Pagar agora</button>
+      </div>
+    </div>
+
+    <div class="secao-resumo">
+      <h2>Resumo do Pedido</h2>
+      <div class="resumo-produto">
+        <img src="IMAGENS/suspensao.jpeg" alt="Suspensão">
+        <div>
+          <p class="nome-produto">Suspensão</p>
+          <p class="preco-produto">R$ 1.299,99</p>
+        </div>
+      </div>
+      <div class="cupom">
+        <input type="text" placeholder="Cupom">
+        <button>Adicionar</button>
+      </div>
+      <div class="totais">
+        <p>Subtotal: <span>R$ 1.299,99</span></p>
+        <p>Envio: <span>Envio grátis</span></p>
+        <p class="total">Total: <span>R$ 1.299,99</span></p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

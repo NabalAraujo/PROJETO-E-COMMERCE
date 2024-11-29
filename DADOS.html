@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Pedido</title>
+  <link rel="stylesheet" href="DADOS.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="IMAGENS/1.png" alt="Logo Peça Express">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Carrinho</a></li>
+        <li><a href="#" class="active">Detalhes</a></li>
+        <li><a href="#">Envio</a></li>
+        <li><a href="#">Pagamento</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pagina-detalhes">
+    <div class="secao-formulario">
+      <h2>Contato</h2>
+      <p>Já tem uma conta? <a href="#">Login</a></p>
+      <form>
+        <div class="grupo-formulario">
+          <label for="contato">Email ou número de telefone</label>
+          <input type="text" id="contato" placeholder="Digite seu email ou telefone">
+          <div class="checkbox">
+            <input type="checkbox" id="whatsapp">
+            <label for="whatsapp">É um número de WhatsApp?</label>
+          </div>
+        </div>
+
+        <h2>Endereço</h2>
+        <div class="grupo-formulario">
+          <label for="nome">Nome</label>
+          <div class="campos-inline">
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="text" id="sobrenome" placeholder="Sobrenome">
+          </div>
+        </div>
+        <div class="grupo-formulario">
+          <label for="endereco">Endereço e número</label>
+          <input type="text" id="endereco" placeholder="Digite o endereço completo">
+        </div>
+        <div class="grupo-formulario">
+          <label for="nota">Nota de envio (opcional)</label>
+          <input type="text" id="nota" placeholder="Digite informações adicionais">
+        </div>
+        <div class="grupo-formulario">
+          <label for="cidade">Cidade, CEP e Estado</label>
+          <div class="campos-inline">
+            <input type="text" id="cidade" placeholder="Cidade">
+            <input type="text" id="cep" placeholder="CEP">
+            <select id="estado">
+              <option value="SP">São Paulo</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="JP">João Pessoa</option>
+            </select>
+          </div>
+        </div>
+        <div class="grupo-formulario">
+          <label for="pais">País</label>
+          <select id="pais">
+            <option value="BR">Brasil</option>
+          </select>
+          <div class="checkbox">
+            <input type="checkbox" id="salvar-info">
+            <label for="salvar-info">Salvar essas informações</label>
+          </div>
+        </div>
+
+        <div class="botoes-formulario">
+          <a href="https://vasco.com.br" class="botao-voltar" target="_blank">Voltar ao carrinho</a>
+          <a href="https://vasco.com.br" class="botao-proximo" target="_blank">Vá para o envio</a>
+        </div>
+      </form>
+    </div>
+
+    <div class="secao-resumo">
+      <h2>Resumo do Pedido</h2>
+      <div class="resumo-produto">
+        <img src="IMAGENS/suspensao.jpeg" alt="Suspensão">
+        <div>
+          <p class="nome-produto">Suspensão</p>
+          <p class="preco-produto">R$ 1.299,99</p>
+        </div>
+      </div>
+      <div class="cupom">
+        <input type="text" placeholder="Cupom">
+        <button>Adicionar</button>
+      </div>
+      <div class="totais">
+        <p>Subtotal: <span>R$ 1.299,99</span></p>
+        <p>Envio: <span>Calculado na próxima etapa</span></p>
+        <p class="total">Total: <span>R$ 1.299,99</span></p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

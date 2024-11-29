@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body > *:not(.rodape) {
+    flex: 1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+.cabecalho .logo img {
+    height: 50px;
+}
+
+.cabecalho nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho nav ul li {
+    margin: 0 15px;
+}
+
+.cabecalho nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.cabecalho .icones img {
+    height: 20px;
+    margin-left: 15px;
+}
+
+.pagina-produto {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.container-produto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+}
+
+.imagem-produto {
+    flex: 1 1 50%;
+    text-align: center;
+}
+
+.imagem-produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-produto .descricao {
+    margin-top: 15px;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.imagem-produto .frete {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #27ae60;
+}
+
+.imagem-produto .frete span {
+    font-weight: bold;
+}
+
+.detalhes-produto {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detalhes-produto h1 {
+    font-size: 2rem;
+    color: #1a2b4b;
+}
+
+.detalhes-produto .preco {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.detalhes-produto .tipo-compra {
+    font-size: 1rem;
+}
+
+.detalhes-produto .quantidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.detalhes-produto .quantidade p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.controles-quantidade {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.controles-quantidade button {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.controles-quantidade input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.adicionar-carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.adicionar-carrinho img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.adicionar-carrinho:hover {
+    background-color: #1e9451;
+}
+
+.rodape {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container-rodape {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.logo-rodape {
+    flex: 1 1 300px;
+}
+
+.logo-rodape img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.logo-rodape p {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.links-rodape {
+    flex: 2 1 600px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.coluna-rodape h3 {
+    color: #27ae60;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.coluna-rodape ul {
+    list-style: none;
+    padding: 0;
+}
+
+.coluna-rodape ul li {
+    margin-bottom: 5px;
+}
+
+.coluna-rodape ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.coluna-rodape ul li a:hover {
+    color: #27ae60;
+}
